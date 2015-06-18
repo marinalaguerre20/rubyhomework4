@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sephora account</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/sephorastyle.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<style> 
+		fieldset{background-color: ;
+			
+			text-align: center;}
+			.register{background-color: black;
+				color: red;
+				float: right;
+				margin-right: 300px;}
+
+			
+
+
+	</style>
+	</head>
+<body>
+	<div id="header">
+		<div  class="topleft">
+			<ul>
+			<li><a href="index.html">MAKEUP</a>
+				<ul> 
+          <li> <a href="">Link1</a></li>
+          <li> <a href="">Link2</a></li>
+          <li> <a href="">Link3</a></li>
+         </ul>
+				</li>
+				<li><a href="form">ACCOUNT</a><ul> 
+            <li> <a href="">Link1</a></li>
+            <li> <a href="">Link2</a></li>
+            <li> <a href="">Link3</a></li>
+          </ul>
+				</li>
+				<li><a href="#">BEAUTY INSIDER</a>
+					<ul> 
+            <li> <a href="">Link1</a></li>
+            <li> <a href="">Link2</a></li>
+            <li> <a href="">Link3</a></li>
+          </ul>
+				</li>
+				<li><a href="free_samples">3 FREE SAMPLES</a>
+					<ul> 
+            <li> <a href="">Link1</a></li>
+            <li> <a href="">Link2</a></li>
+            <li> <a href="">Link3</a></li>
+          </ul>
+				</li>
+			</ul>
+		</div>
+		<div class="topright">
+				<ul >
+					<li><a href="#">STORE</a></li>
+					<li><a href="#">BASKET</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div>
+			<a href="homepage">
+			<img  id="logo" src="images/sephoralogo.png" >
+			</a>
+		</div>
+
+	<fieldset>
+		<form method="POST" action="/register">            
+	      <p><b>REGISTER WITH SEPHORA</b></p>
+	      <p style="color:red">All fields required.</p>
+	      <label>First Name:<br />
+	      <input type="text" name="fname" size="25"/></label>
+	      <label>Last Name:<br />
+	      <input type="text" name="lname" size="25"/></label><br />
+	      <label>E-mail:<br />
+	      <input type="text" name="E-mail" size="54"/></label><br />
+
+	      <label>Password:<br />
+	      <input type="text" name="Password" size="25"/></label>
+	      <label>Confirm Password:<br />
+	      <input type="text" name="Password" size="25" /></label><br />
+	      <label>Full Address:<br />
+	      <input type="text" name="Address" size="54"/></label><br />
+	      <p>
+	        <br />
+	        
+	        <input type="radio" name="consent" value="yes" />Yes, I would like recieve e-mails and notifications from Sephora
+	      </p>
+	      <label>Security question
+	        <select name="question">
+	          <option value="grandma">Your grandmothers first name?</option>
+	          <option value="maiden">Your maiden name?</option>
+	          <option value="born">In what city were you born?</option>  
+	        </select></label>
+	          <label>Answer:
+	          <input type="text" name="answer" size="15"/></label><br /> 
+	          <label>SECURITY CHECK</label>
+			<p>Seecurity is priority for Sephora. Please enter the characters below to show you're an authentic user.</p>
+			<h4>ASD12j</h4>
+	          <input type="text" name="authentic" size="15"/></label> <br /><br />
+	      	<input class="register" type="submit"> 
+   		 </form>
+    </fieldset>
+
+        
+            
+        <!-- when the customer clicks register button the alert comes up-->
+      
+    <script type="text/javascript">
+         
+          $(document).ready(function (){
+            $('.register').click(function(){
+              var button = $(this). attr('button');
+              alert('THANK YOU FOR CREATING AN ACCOUNT WITH SEPHORA');
+            }
+          );
+
+
+    </script>
+    
+   <script>
+        $(document).ready(function(){
+          $('li').hover(function(){
+            $(this).find('ul>li').stop().fadeToggle(300);
+          });
+        });
+      </script>
+  </body>
+    </html>
